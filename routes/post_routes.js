@@ -8,6 +8,8 @@ const router = Express.Router()
 router.post("/", postPost)
 router.get("/", getPosts)
 router.put("/:id", updatePost)
+
+//html required
 router.post("/upload", upload.single('pic'), postPostImg)
 router.get("/img/:id", getPostImg)
 
