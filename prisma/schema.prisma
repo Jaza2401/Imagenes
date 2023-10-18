@@ -11,9 +11,9 @@ datasource db {
 }
 
 model Post {
-  id      Int    @id @default(autoincrement())
-  title   String @db.VarChar(255)
-  content String
-  name    String
-  img     Bytes
+  id      Int     @id @default(autoincrement())
+  title   String? @db.VarChar(255)
+  content String?
+  name    String?
+  img     Bytes?
 }
